@@ -154,3 +154,114 @@ document.getElementById("place13_2021").innerHTML= "Place: " + card13_2021[4];
 document.getElementById("capacity13_2021").innerHTML="Capacity: " + card13_2021[5];
 document.getElementById("assistance13_2021").innerHTML= "Assistence: " + card13_2021[6];
 document.getElementById("price13_2021").innerHTML= "Precio: $ "+ card13_2021[7];
+
+
+
+/////////////////////******************* eventos pasados click******************************* *////////////////////
+
+let data2 = [
+    {
+      
+      "image":'https://i.postimg.cc/Fs03hQDt/Collectivities-Party.jpg',
+      "name":'Collectivities Party',
+      "date":"2021-12-12",
+      "description":"Enjoy your favourite dishes, from different countries, in a unique event for the whole family.",
+      "category":"Food Fair",
+      "place":"Room A",
+      "capacity":45000,
+      "assistance":42756,
+      "price":5
+    },
+    
+    {
+    
+      "image":"https://i.postimg.cc/GmHRkbNV/Jurassic-Park.jpg",
+      "name":"Jurassic Park",
+      "date":"2021-11-02",
+      "description":"Let's go meet the biggest dinosaurs in the paleontology museum.",
+      "category":"Museum",
+      "place":"Field",
+      "capacity":82000,
+      "assistance":65892,
+      "price":15
+    },
+    
+    {
+    
+      "image":"https://i.postimg.cc/KYD0jMf2/comicon.jpg",
+      "name":"Comicon",
+      "date":"2021-02-12",
+      "description":"For comic lovers, all your favourite characters gathered in one place.",
+      "category":"Costume Party",
+      "place":"Room C",
+      "capacity":120000,
+      "assistance":110000,
+      "price":54
+    },
+    
+    
+    {
+      
+      "image":"https://i.postimg.cc/KvsSK8cj/Electronic-Fest.jpg",
+      "name":"Electronic Fest",
+      "date":"2021-01-22",
+      "description":"The best national and international DJs gathered in one place.",
+      "category":"Music Concert",
+      "place":"Room A",
+      "capacity":138000,
+      "assistance":110300,
+      "price":250
+      },
+    {
+      
+      "image":"https://i.postimg.cc/fyLqZY9K/10-K-for-life.jpg",
+      "name":"10K for life",
+      "date":"2021-03-01",
+      "description":"Come and exercise, improve your health and lifestyle.",
+      "category":"Race",
+      "place":"Soccer field",
+      "capacity":30000,
+      "assistance":25698,
+      "price":3
+    },
+    
+    {
+      
+      "image":"https://i.postimg.cc/05FhxHVK/book4.jpg",
+      "name":"Just for your kitchen",
+      "date":"2021-11-09",
+      "description":"If you're a gastronomy lover come get the cookbook that best suits your taste and your family's.",
+      "category":"Book Exchange",
+      "place":"Room D6",
+      "capacity":130000,
+      "assistance":90000,
+      "price":100
+    },
+    {
+      
+      "image":"https://i.postimg.cc/vH52y81C/cinema4.jpg",
+      "name":"Batman",
+      "date":"2021-03-11",
+      "description":"Come see Batman fight crime in Gotham City.",
+      "category":"Cinema",
+      "place":"Room D1",
+      "capacity":11000,
+      "assistance":9300,
+      "price":225
+    },
+   
+  ];
+  
+
+  /***************recorrer todos los eventos */
+
+  for(let i=0; i < data2.length; i++){
+    console.log(data2[i])
+ }
+
+
+/*************recorrer por fechas y eventos */
+data2.map(function(data2){
+
+    console.log(data2.name+" => "+data2.date);
+  });

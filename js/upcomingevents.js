@@ -160,3 +160,110 @@ document.getElementById("capacity14_2022").innerHTML="Capacity: " + card14_2022[
 document.getElementById("assistance14_2022").innerHTML= "Assistence: " + card14_2022[6];
 document.getElementById("price14_2022").innerHTML= "Precio: $ "+ card14_2022[7];
 
+
+/////////////////////******************* eventos futuros click******************************* *////////////////////
+
+let data3 = [
+    
+    {
+    
+      "image":"https://i.postimg.cc/ZmD3Xf57/Korean-style.jpg",
+      "name":"Korean style",
+      "date":"2022-08-12",
+      "description":"Enjoy the best Korean dishes, with international chefs and awesome events.",
+      "category":"Food Fair",
+      "place":"Room A",
+      "capacity":45000,
+      "assistance":42756,
+      "price":10
+    },
+   
+    {
+    
+      "image":"https://i.postimg.cc/c4C2zXm8/Parisian-Museum.jpg",
+      "name":"Parisian Museum",
+      "date":"2022-11-02",
+      "description":"A unique tour in the city of lights, get to know one of the most iconic places.",
+      "category":"Museum",
+      "place":"Paris",
+      "capacity":8200,
+      "estimate":8200,
+      "price":3500
+    },
+    
+    {
+      
+      "image":"https://i.postimg.cc/RZ9fH4Pr/halloween.jpg",
+      "name":"Halloween Night",
+      "date":"2022-02-12",
+      "description":"Come with your scariest costume and win incredible prizes.",
+      "category":"Costume Party",
+      "place":"Room C",
+      "capacity":12000,
+      "estimate":9000,
+      "price":12
+    },
+    {
+      
+      "image":"https://i.postimg.cc/PrMJ0ZMc/Metallica-in-concert.jpg",
+      "name":"Metallica in concert",
+      "date":"2022-01-22",
+      "description":"The only concert of the most emblematic band in the world.",
+      "category":"Music Concert",
+      "place":"Room A"
+      ,"capacity":138000,
+      "estimate":138000,
+      "price":150
+    },
+    
+    
+    {
+      
+      "image":"https://i.postimg.cc/zv67r65z/15kny.jpg",
+      "name":"15K NY",
+      "date":"2022-03-01",
+      "description":"We'll be raising funds for hospitals and medical care in this unique event held in The Big Apple.",
+      "category":"Race",
+      "place":"New York",
+      "capacity":3000000,
+      "assistance":2569800,
+      "price":3
+      },
+    {
+      
+      "image":"https://i.postimg.cc/Sst763n6/book1.jpg",
+      "name":"School's book fair",
+      "date":"2022-10-15",
+      "description":"Bring your unused school book and take the one you need.",
+      "category":"Book Exchange",
+      "place":"Room D1",
+      "capacity":150000,
+      "estimate":123286,
+      "price":1
+    },
+   
+    {
+    
+      "image":"https://i.postimg.cc/T3C92KTN/scale.jpg",
+      "name":"Avengers",
+      "date":"2022-10-15",
+      "description":"Marvel's Avengers Premier in 3d, the start of an epic saga with your favourite superheroes.",
+      "category":"Cinema",
+      "place":"Room D1",
+      "capacity":9000,
+      "estimate":9000,
+      "price":250
+    }
+  ];
+  
+  /***************recorrer todos los eventos */
+ for(let i=0; i < data3.length; i++ ){
+    console.log(data3[i])
+ }
+
+
+/*************recorrer por fechas y eventos */
+  data3.map(function(data3){
+
+    console.log(data3.name+" => "+data3.date);
+  });

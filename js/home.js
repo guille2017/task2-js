@@ -308,50 +308,194 @@ document.getElementById("price14").innerHTML= "Precio: $ "+ card14[7];
 
 
 
+/////////////////////******************* todos los eventos click******************************* *////////////////////
+
+let data1 = [
+    {
+      
+      "image":'https://i.postimg.cc/Fs03hQDt/Collectivities-Party.jpg',
+      "name":'Collectivities Party',
+      "date":"2021-12-12",
+      "description":"Enjoy your favourite dishes, from different countries, in a unique event for the whole family.",
+      "category":"Food Fair",
+      "place":"Room A",
+      "capacity":45000,
+      "assistance":42756,
+      "price":5
+    },
+    {
+    
+      "image":"https://i.postimg.cc/ZmD3Xf57/Korean-style.jpg",
+      "name":"Korean style",
+      "date":"2022-08-12",
+      "description":"Enjoy the best Korean dishes, with international chefs and awesome events.",
+      "category":"Food Fair",
+      "place":"Room A",
+      "capacity":45000,
+      "assistance":42756,
+      "price":10
+    },
+    {
+    
+      "image":"https://i.postimg.cc/GmHRkbNV/Jurassic-Park.jpg",
+      "name":"Jurassic Park",
+      "date":"2021-11-02",
+      "description":"Let's go meet the biggest dinosaurs in the paleontology museum.",
+      "category":"Museum",
+      "place":"Field",
+      "capacity":82000,
+      "assistance":65892,
+      "price":15
+    },
+    {
+    
+      "image":"https://i.postimg.cc/c4C2zXm8/Parisian-Museum.jpg",
+      "name":"Parisian Museum",
+      "date":"2022-11-02",
+      "description":"A unique tour in the city of lights, get to know one of the most iconic places.",
+      "category":"Museum",
+      "place":"Paris",
+      "capacity":8200,
+      "estimate":8200,
+      "price":3500
+    },
+    {
+    
+      "image":"https://i.postimg.cc/KYD0jMf2/comicon.jpg",
+      "name":"Comicon",
+      "date":"2021-02-12",
+      "description":"For comic lovers, all your favourite characters gathered in one place.",
+      "category":"Costume Party",
+      "place":"Room C",
+      "capacity":120000,
+      "assistance":110000,
+      "price":54
+    },
+    {
+      
+      "image":"https://i.postimg.cc/RZ9fH4Pr/halloween.jpg",
+      "name":"Halloween Night",
+      "date":"2022-02-12",
+      "description":"Come with your scariest costume and win incredible prizes.",
+      "category":"Costume Party",
+      "place":"Room C",
+      "capacity":12000,
+      "estimate":9000,
+      "price":12
+    },
+    {
+      
+      "image":"https://i.postimg.cc/PrMJ0ZMc/Metallica-in-concert.jpg",
+      "name":"Metallica in concert",
+      "date":"2022-01-22",
+      "description":"The only concert of the most emblematic band in the world.",
+      "category":"Music Concert",
+      "place":"Room A"
+      ,"capacity":138000,
+      "estimate":138000,
+      "price":150
+    },
+    {
+      
+      "image":"https://i.postimg.cc/KvsSK8cj/Electronic-Fest.jpg",
+      "name":"Electronic Fest",
+      "date":"2021-01-22",
+      "description":"The best national and international DJs gathered in one place.",
+      "category":"Music Concert",
+      "place":"Room A",
+      "capacity":138000,
+      "assistance":110300,
+      "price":250
+      },
+    {
+      
+      "image":"https://i.postimg.cc/fyLqZY9K/10-K-for-life.jpg",
+      "name":"10K for life",
+      "date":"2021-03-01",
+      "description":"Come and exercise, improve your health and lifestyle.",
+      "category":"Race",
+      "place":"Soccer field",
+      "capacity":30000,
+      "assistance":25698,
+      "price":3
+    },
+    {
+      
+      "image":"https://i.postimg.cc/zv67r65z/15kny.jpg",
+      "name":"15K NY",
+      "date":"2022-03-01",
+      "description":"We'll be raising funds for hospitals and medical care in this unique event held in The Big Apple.",
+      "category":"Race",
+      "place":"New York",
+      "capacity":3000000,
+      "assistance":2569800,
+      "price":3
+      },
+    {
+      
+      "image":"https://i.postimg.cc/Sst763n6/book1.jpg",
+      "name":"School's book fair",
+      "date":"2022-10-15",
+      "description":"Bring your unused school book and take the one you need.",
+      "category":"Book Exchange",
+      "place":"Room D1",
+      "capacity":150000,
+      "estimate":123286,
+      "price":1
+    },
+    {
+      
+      "image":"https://i.postimg.cc/05FhxHVK/book4.jpg",
+      "name":"Just for your kitchen",
+      "date":"2021-11-09",
+      "description":"If you're a gastronomy lover come get the cookbook that best suits your taste and your family's.",
+      "category":"Book Exchange",
+      "place":"Room D6",
+      "capacity":130000,
+      "assistance":90000,
+      "price":100
+    },
+    {
+      
+      "image":"https://i.postimg.cc/vH52y81C/cinema4.jpg",
+      "name":"Batman",
+      "date":"2021-03-11",
+      "description":"Come see Batman fight crime in Gotham City.",
+      "category":"Cinema",
+      "place":"Room D1",
+      "capacity":11000,
+      "assistance":9300,
+      "price":225
+    },
+    {
+    
+      "image":"https://i.postimg.cc/T3C92KTN/scale.jpg",
+      "name":"Avengers",
+      "date":"2022-10-15",
+      "description":"Marvel's Avengers Premier in 3d, the start of an epic saga with your favourite superheroes.",
+      "category":"Cinema",
+      "place":"Room D1",
+      "capacity":9000,
+      "estimate":9000,
+      "price":250
+    }
+  ];
+  
+  /***************recorrer todos los eventos */
+ for(let i=0; i < data1.length; i++ ){
+    console.log(data1[i])
+ }
+
+
+/*************recorrer por fechas y eventos */
+  data1.map(function(data1){
+
+    console.log(data1.name+" => "+data1.date);
+  });
 
 
 
 
 
 
-/*
-$.each(arr, function(i) {
-  var templateString =
-    '<div class="col-sm-4 card mb-2 box-shadow">    <img class="card-img-top" src="http://safarset.com/wp-content/uploads/2019/05/IMG-20190423-WA0029.jpeg" alt="Card image cap">      <div class="card-body p-0">  <h5>' +
-    arr[i].Name + '</h5> </p></div> </div>';
-  $('#test').append(templateString);
-})
-*/
 
-
-
-/*let caja_3Element = document.getElementById("caja_3")
-let card_1Element = document.getElementById("card_1")
-let imgElement = document.getElementById("img")
-
-caja_3document.removeChild(element)
-imagen1document.removeChild(element)
-card_1document.removeChild(element)
-/*element.innerHTML = nuevo contenido html
-elemento.attribute = nuevo valor cambia el valor del atributo de html
-element.style.property = nuevo estilo cambia el estilo html*/
-
-/*imagen1Element.innerHTML = "https://i.postimg.cc/Fs03hQDt/Collectivities-Party.jpg"
-
-
-
-let card = [{
-    _id: 1,
-
-    "img":"https://i.postimg.cc/Fs03hQDt/Collectivities-Party.jpg",
-    "name":"Collectivities Party",
-    "date":"2021-12-12",
-    "description":"Enjoy your favourite dishes, from different countries, in a unique event for the whole family.",
-    "card-title":"Food Fair",
-    "place":"Room A",
-    "capacity":45000,
-    "assistance":42756,
-    "precio-text":5
-  }]
-*/
- 
